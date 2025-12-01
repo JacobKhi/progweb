@@ -12,7 +12,7 @@
       <h1>Exercício 4</h1>
     </header>
 
-    <form>
+    <form method="post" enctype="multipart/form-data">
       <fieldset>
         <legend>Informacoes do cliente</legend>
 
@@ -95,6 +95,15 @@
           <option value="smartwatch x"></option>
         </datalist>
         <br /><br />
+
+        <label for="comprovante">comprovante</label>
+        <input
+          type="file"
+          id="comprovante"
+          name="comprovante"
+          accept=".jpg, .png, .pdf"
+          required
+        />
       </fieldset>
 
       <fieldset>
@@ -137,7 +146,7 @@
       <fieldset>
         <legend>Finalizacao</legend>
 
-        <input type="checkbox" id="termos" name="termos" required/>
+        <input type="checkbox" id="termos" name="termos" required />
         <label for="termos">Eu concordo com todos os termos de servico</label>
         <br /><br />
 

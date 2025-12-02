@@ -12,147 +12,149 @@
       <h1>Exercício 4</h1>
     </header>
 
-    <form method="post" enctype="multipart/form-data">
-      <fieldset>
-        <legend>Informacoes do cliente</legend>
+    <section>
+      <form method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Informacoes do cliente</legend>
 
-        <label for="nome">Nome Completo</label>
-        <input type="text" id="nome" name="nome" required />
-        <br /><br />
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" name="nome" required />
+          <br /><br />
 
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          autocomplete="email"
-          required
-        />
-        <br /><br />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+          />
+          <br /><br />
 
-        <label for="telefone">Telefone</label>
-        <input
-          type="tel"
-          id="telefone"
-          name="telefone"
-          pattern="\(\d{2}\) \d{5}-\d{4}"
-          title="Digite no formato (99) 99999-9999"
-        />
-        <br /><br />
+          <label for="telefone">Telefone</label>
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            pattern="\(\d{2}\) \d{5}-\d{4}"
+            title="Digite no formato (99) 99999-9999"
+          />
+          <br /><br />
 
-        <label for="senha">Senha</label>
-        <input
-          type="password"
-          id="senha"
-          name="senha"
-          minlength="8"
-          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-          title="A senha deve ter 8+ caracteres pelo menos uma letra maiúscula uma minúscula e um digito"
-          required
-        />
-        <br /><br />
+          <label for="senha">Senha</label>
+          <input
+            type="password"
+            id="senha"
+            name="senha"
+            minlength="8"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="A senha deve ter 8+ caracteres pelo menos uma letra maiúscula uma minúscula e um digito"
+            required
+          />
+          <br /><br />
 
-        <label for="site">Site</label>
-        <input type="url" id="site" name="site" />
-        <br /><br />
-      </fieldset>
+          <label for="site">Site</label>
+          <input type="url" id="site" name="site" />
+          <br /><br />
+        </fieldset>
 
-      <fieldset>
-        <legend>Detalhes do pedido</legend>
+        <fieldset>
+          <legend>Detalhes do pedido</legend>
 
-        <label for="cor">Cor do produto</label>
-        <input type="color" name="cor" id="cor" />
-        <br /><br />
+          <label for="cor">Cor do produto</label>
+          <input type="color" name="cor" id="cor" />
+          <br /><br />
 
-        <label for="data">Data de entrega</label>
-        <input
-          type="datetime-local"
-          name="data"
-          id="data"
-          min="2026-01-01T00:00"
-          max="2026-12-31T23:59"
-        />
-        <br /><br />
+          <label for="data">Data de entrega</label>
+          <input
+            type="datetime-local"
+            name="data"
+            id="data"
+            min="2026-01-01T00:00"
+            max="2026-12-31T23:59"
+          />
+          <br /><br />
 
-        <label for="qtd">Quantidade</label>
-        <input
-          type="range"
-          id="qtd"
-          name="qtd"
-          min="1"
-          max="10"
-          value="5"
-          step="1"
-        />
-        <br /><br />
+          <label for="qtd">Quantidade</label>
+          <input
+            type="range"
+            id="qtd"
+            name="qtd"
+            min="1"
+            max="10"
+            value="5"
+            step="1"
+          />
+          <br /><br />
 
-        <label for="modelo">Modelo do produto</label>
-        <input type="text" id="modelo" name="modelo" list="lista-modelos" />
+          <label for="modelo">Modelo do produto</label>
+          <input type="text" id="modelo" name="modelo" list="lista-modelos" />
 
-        <datalist id="lista-modelos">
-          <option value="laptop pro"></option>
-          <option value="tablet slim"></option>
-          <option value="smartwatch x"></option>
-        </datalist>
-        <br /><br />
+          <datalist id="lista-modelos">
+            <option value="laptop pro"></option>
+            <option value="tablet slim"></option>
+            <option value="smartwatch x"></option>
+          </datalist>
+          <br /><br />
 
-        <label for="comprovante">comprovante</label>
-        <input
-          type="file"
-          id="comprovante"
-          name="comprovante"
-          accept=".jpg, .png, .pdf"
-          required
-        />
-      </fieldset>
+          <label for="comprovante">comprovante</label>
+          <input
+            type="file"
+            id="comprovante"
+            name="comprovante"
+            accept=".jpg, .png, .pdf"
+            required
+          />
+        </fieldset>
 
-      <fieldset>
-        <legend>Opcoes de envio</legend>
+        <fieldset>
+          <legend>Opcoes de envio</legend>
 
-        <p>tipo de envio</p>
+          <p>tipo de envio</p>
 
-        <label for="envio_normal">envio normal</label>
-        <input
-          type="radio"
-          id="envio_normal"
-          name="tipo_enviado"
-          value="normal"
-          checked
-        />
-        <br /><br />
+          <label for="envio_normal">envio normal</label>
+          <input
+            type="radio"
+            id="envio_normal"
+            name="tipo_enviado"
+            value="normal"
+            checked
+          />
+          <br /><br />
 
-        <label for="envio_expresso">envio expresso</label>
-        <input
-          type="radio"
-          id="envio_expresso"
-          name="tipo_enviado"
-          value="expresso"
-        />
-        <br /><br />
+          <label for="envio_expresso">envio expresso</label>
+          <input
+            type="radio"
+            id="envio_expresso"
+            name="tipo_enviado"
+            value="expresso"
+          />
+          <br /><br />
 
-        <label for="comentarios">comentarios adicionais</label>
-        <textarea
-          name="comentarios"
-          id="comentarios"
-          rows="4"
-          cols="50"
-          minlength="10"
-          maxlength="300"
-          placeholder="digite seus comentarios aqui"
-        ></textarea>
-        <br /><br />
-      </fieldset>
+          <label for="comentarios">comentarios adicionais</label>
+          <textarea
+            name="comentarios"
+            id="comentarios"
+            rows="4"
+            cols="50"
+            minlength="10"
+            maxlength="300"
+            placeholder="digite seus comentarios aqui"
+          ></textarea>
+          <br /><br />
+        </fieldset>
 
-      <fieldset>
-        <legend>Finalizacao</legend>
+        <fieldset>
+          <legend>Finalizacao</legend>
 
-        <input type="checkbox" id="termos" name="termos" required />
-        <label for="termos">Eu concordo com todos os termos de servico</label>
-        <br /><br />
+          <input type="checkbox" id="termos" name="termos" required />
+          <label for="termos">Eu concordo com todos os termos de servico</label>
+          <br /><br />
 
-        <button type="submit">Finalizar pedido</button>
-      </fieldset>
-    </form>
+          <button type="submit">Finalizar pedido</button>
+        </fieldset>
+      </form>
+    </section>
 
     <footer>
       <a href="../../sumario.html">Retornar para o sumario</a>

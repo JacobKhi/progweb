@@ -5,24 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Gustavo Jacob Ribeiro" />
     <title>Indice</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div class="">
-      <header>
-        <h1>Curso Desenvolvimento Web</h1>
+  <body class="bg-gray-100 font-sans leading-relaxed">
+    
+    <div class="max-w-6xl mx-auto bg-white shadow-xl my-5 p-4 rounded-lg flex flex-wrap">
+      
+      <header class="w-full bg-slate-700 text-white p-6 rounded-t-lg mb-4 shadow-sm">
+        <h1 class="text-3xl font-bold tracking-wide">Curso Desenvolvimento Web</h1>
       </header>
-      <nav>
-        <ul>
-          <li><a href="curso/home.html">Página Principal</a></li>
-          <li><a href="curso/sumario.html">Sumário</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Sobre</a></li>
+
+      <nav class="w-full md:w-1/4 p-2">
+        <ul class="space-y-2">
+          <li>
+            <a href="curso/home.html" 
+               class="block bg-slate-200 text-slate-800 font-bold p-4 rounded border-2 border-transparent hover:bg-white hover:text-red-600 hover:border-slate-800 transition duration-300 ease-in-out shadow-sm">
+               Página Principal
+            </a>
+          </li>
+          <li>
+            <a href="curso/sumario.html" 
+               class="block bg-slate-200 text-slate-800 font-bold p-4 rounded border-2 border-transparent hover:bg-white hover:text-red-600 hover:border-slate-800 transition duration-300 ease-in-out shadow-sm">
+               Sumário
+            </a>
+          </li>
+          <li>
+            <a href="#" 
+               class="block bg-slate-200 text-slate-800 font-bold p-4 rounded border-2 border-transparent hover:bg-white hover:text-red-600 hover:border-slate-800 transition duration-300 ease-in-out shadow-sm">
+               Contato
+            </a>
+          </li>
+          <li>
+            <a href="#" 
+               class="block bg-slate-200 text-slate-800 font-bold p-4 rounded border-2 border-transparent hover:bg-white hover:text-red-600 hover:border-slate-800 transition duration-300 ease-in-out shadow-sm">
+               Sobre
+            </a>
+          </li>
         </ul>
       </nav>
-      <section>
-        <h2>Lorem Ipsum</h2>
-        <p>
+
+      <section class="w-full md:w-3/4 p-6 md:border-l-2 border-slate-200 text-gray-700 text-justify">
+        <h2 class="text-2xl font-bold mb-4 text-slate-800 border-b pb-2">Lorem Ipsum</h2>
+        <p class="mb-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nunc
           neque. In in leo pretium, dictum purus eu, sodales metus. Pellentesque
           habitant morbi tristique senectus et netus et malesuada fames ac
@@ -37,7 +61,7 @@
           pellentesque velit.
         </p>
 
-        <p>
+        <p class="mb-4">
           Orci varius natoque penatibus et magnis dis parturient montes,
           nascetur ridiculus mus. Donec in suscipit eros, vel vulputate lectus.
           In lacinia tempor elit id mattis. Morbi sed commodo felis, ac rutrum
@@ -46,7 +70,7 @@
           feugiat eu neque. Duis aliquam neque laoreet enim fermentum porttitor.
         </p>
 
-        <p>
+        <p class="mb-4">
           Fusce id blandit velit. Aliquam eleifend mollis nulla ut sollicitudin.
           Donec ac consequat ante, nec rhoncus leo. Vivamus in dui ut est
           dapibus sollicitudin. Morbi mi neque, suscipit et placerat eu,
@@ -55,7 +79,7 @@
           euismod orci.
         </p>
 
-        <p>
+        <p class="mb-4">
           Proin sed tincidunt leo. Fusce rhoncus mauris et turpis interdum
           pharetra. Praesent sollicitudin mauris dapibus sem malesuada tempor.
           Etiam at facilisis nisl, at viverra mi. Nullam tellus nibh, gravida eu
@@ -67,7 +91,7 @@
           purus, fermentum eget lacus quis, malesuada molestie purus.
         </p>
 
-        <p>
+        <p class="mb-4">
           Sed aliquam elit id diam ornare, sed egestas dui dapibus. Aenean
           vestibulum est id purus vestibulum finibus. Duis eget tortor lorem.
           Duis bibendum mauris nisi, id lacinia neque convallis non. Praesent
@@ -82,8 +106,9 @@
           eu nisi a ante aliquet pretium.
         </p>
       </section>
-      <footer>
-        <p>Copyright 2019 Lorem Ipsum</p>
+
+      <footer class="w-full bg-slate-700 text-white p-4 text-center rounded-b-lg mt-4 shadow-inner">
+        <p class="text-sm opacity-90">Copyright 2019 Lorem Ipsum</p>
       </footer>
     </div>
   </body>

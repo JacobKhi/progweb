@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gustavo Jacob Ribeiro" />
+    <title>ex 5</title>
+    <link rel="stylesheet" href="calcCss.css" />
+  </head>
+
+  <body>
+    <header>
+        <h1>Calculadora JS - Event Listeners</h1>
+    </header>
+
+    <section>
+      <div class="calculadora">
+        <input type="text" id="display" disabled />
+        <div class="botoes">
+          <button class="btn-acao" data-acao="limpar">C</button>
+          <button class="btn-acao" data-acao="apagar">DEL</button>
+
+          <button class="btn-operador" data-valor="/">/</button>
+          <button class="btn-operador" data-valor="*">*</button>
+
+          <button data-valor="7">7</button>
+          <button data-valor="8">8</button>
+          <button data-valor="9">9</button>
+          <button class="btn-operador" data-valor="-">-</button>
+
+          <button data-valor="4">4</button>
+          <button data-valor="5">5</button>
+          <button data-valor="6">6</button>
+          <button class="btn-operador" data-valor="+">+</button>
+
+          <button data-valor="1">1</button>
+          <button data-valor="2">2</button>
+          <button data-valor="3">3</button>
+
+          <button class="btn-igual" data-acao="calcular">=</button>
+
+          <button class="zero" data-valor="0">0</button>
+          <button data-valor=".">.</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <a href="../../sumario.html">Retornar para o sumario</a>
+    </footer>
+    
+    <script src="calcScript.js"></script>
+  </body>
+</html>
